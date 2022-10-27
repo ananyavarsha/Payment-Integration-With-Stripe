@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Accept a payment</title>
+    <meta name="description" content="A demo of a payment on Stripe" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="checkout.css" />
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?version=3.52.1&features=fetch"></script>
+  </head>
+  <body>
+  
+  	<form id="payment-form" th:action="@{/}" th:object="${checkoutForm}" method="POST">
+	  	<p> Please fill in the details inorder to proceed further</b></p>
+	  	
+	  	<p> Email : <input type="text" th:field="*{email}" placeholder="Email address" required/> </p>
+	  	<p th:if="${#fields.hasErrors('email')}" th:errors="*{email}" style="color: red"></p>
+	  	
+	  	<p> Amount :  <input type="text" th:field="*{amount}" placeholder="Amount" required/> </p>
+	  	<p th:if="${#fields.hasErrors('amount')}" th:errors="*{amount}" style="color: red"></p>
+	  	
+	  	<p>Feature Request :  <input type="text" th:field="*{featureRequest}" placeholder="Feature Request" required/> </p>
+	  	<p th:if="${#fields.hasErrors('featureRequest')}" th:errors="*{featureRequest}"  style="color: red"></p>
+	  	
+	  	<p><input type="submit"/></p>
+  	</form>
+  
+  	
+  </body>
+</html>

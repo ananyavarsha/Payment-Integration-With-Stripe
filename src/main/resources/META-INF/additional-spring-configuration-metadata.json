@@ -1,0 +1,52 @@
+{"properties": [
+  {
+    "name": "stripe.secret.key",
+    "type": "java.lang.String",
+    "description": "A description for 'stripe.secret.key'"
+  },
+  {
+    "name": "baseURL",
+    "type": "java.lang.String",
+    "description": "A description for 'baseURL'"
+  },
+  {
+    "name": "stripe.public.key",
+    "type": "java.lang.String",
+    "description": "A description for 'stripe.public.key'"
+  },
+  {
+    "name": "stripe.api.key",
+    "type": "java.lang.String",
+    "description": "A description for 'stripe.api.key'"
+  },
+  {
+    "name": "baseURL",
+    "type": "java.lang.String",
+    "description": "A description for 'baseURL'"
+  },
+  {
+    "name": "baseURL",
+    "type": "java.lang.String",
+    "description": "A description for 'baseURL'"
+  },
+  {
+    "name": "baseURL",
+    "type": "java.lang.String",
+    "description": "A description for 'baseURL'"
+  },
+  {
+    "name": "baseURL",
+    "type": "java.lang.String",
+    "description": "A description for 'baseURL'"
+  },
+  {
+    "name": "baseURL",
+    "type": "java.lang.String",
+    "description": "A description for 'baseURL'"
+  },
+  {
+    "name": "stripe.webhook.secret",
+    "type": "java.lang.String",
+    "description": "A description for 'stripe.webhook.secret'"
+  }
+]}
